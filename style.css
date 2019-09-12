@@ -1,0 +1,398 @@
+/*
+ Stylesheet:     Robert D Allen MBA
+ URL:            http://RobertDAllen.com/
+ Author:         Robert Allen
+ Version:        2019.09.11
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700&display=swap');
+
+
+h1, h2, h3, h4, h5, h6, p, span {font-family: 'Raleway', sans-serif; margin: 8px 0px; color: #666666;}
+
+h1 {font-size: 40px; line-height: 35px; color: #fcd21d;}
+h2 {font-size: 16px; line-height: 35px; display: inline;}
+h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300; color: #333333;}
+h4 {font-size: 22px; line-height: 25px; font-weight: 700; color: #ffffff;}
+h6 {font-size: 18px; line-height: 22px; text-transform: uppercase; color: #fcd21d;font-weight: 700; margin-top: 20px;}
+p {font-size: 16px; line-height: 20px;}
+strong {font-weight: 700;}
+a {font-weight: 700; color: lightskyblue; }
+hr {margin: 20px 0;}
+
+
+body {
+    margin: auto;
+}
+body div.body {
+    z-index: 9;
+    height: auto;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+div.row {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.row:after, .inner_text:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    content: ".";
+}
+div.column {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+
+/* Start of Mobile Styles */ 
+
+    /* Start of HEADER  */
+    body div.header {
+        z-index: 10;
+        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.3);
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0 0 0;
+        margin-bottom: 20px;
+    }
+    div.header_1 {
+        text-align: left;
+        float: left;
+        width: 100%;
+        display: block;
+    }
+    div.header_2 {
+        text-align: left;
+        float: left;
+        width: 100%;
+        display: block;
+    }
+    .download_link {
+        margin-top: 18px;
+    }
+    /* End of HEADER */
+
+    /* Start of SUMMARY */
+    img.profile_image {
+        border-radius: 50%;
+        width: 30%;
+        max-width: 250px;
+        height: auto;
+        float: right;
+        margin-top: 20px;
+    }
+    div.key_points > p {
+        color: #666666;
+        margin-bottom: 13px;
+        font-size: 14px;
+    }
+    div.column_key {
+        width: 100%;
+        text-align: left;
+        float: left;
+        margin-right:auto;
+        display: block;
+    }
+    div.column_info {
+        width: 100%;
+        text-align: left;
+        display: block;
+        float: left;
+    }
+    /* End of SUMMARY */
+
+    /* Start of BODY */
+
+    p.rpsectionhead {
+        color: #fcd21d;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1em;
+        padding-bottom: 0;
+        margin-top: 40px;
+    }
+
+    div.column_1_1 {}
+    div.rowportfolio {
+        padding: 27px 0 0 0;
+    }
+    div.section_title > div.text_inner > h3 {
+        margin-left: 50px;
+    }
+
+        /* Start of Portfolio Display - General */
+        h4.company_name {
+            padding: 11px;
+            margin-left: 0;
+            max-width: 200px;
+            padding-bottom: 30px;
+        }
+        div.section_title {
+            background-color: #333;
+            border-radius: 0 0 100% 0;
+            max-width: 450px;
+            height: auto;
+        }
+        p.rightalign {
+            text-align: left;
+        }
+        p.leftalign {
+            text-align: left;
+        }
+        p.img_title {
+            font-weight: 700;
+            margin-top: 22px;
+        }
+        div.image > a >span.image_wrap > img {
+            width: 100%;
+        }
+        div#campusadvantage {
+            margin-top: 50px;
+        }
+        /* End of Portfolio Display - General */
+
+        /* Start of Portfolio Display of 2 Columns */
+        .examples_2 {}
+        div.column_1_2 {
+            width: 44%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+        }
+        div.column_2_2 {
+            width: 44%;
+            display: inline-block;
+            float: right;
+            text-align: center;
+        }
+        /* End of Portfolio Display of 2 Columns */
+
+        /* Start of Portfolio Display of 4 Columns */
+        .examples_4 {}
+        div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
+            width: 42%;
+            display: inline-block;
+            text-align: center;
+        }
+        div.column_1_4, div.column_3_4, {
+            margin-right:auto;
+            float: left;
+        }
+        div.column_2_4, div.column_4_4 {
+            margin-right:0;
+            float: right;
+        }
+        span.columns_1_and_2, span.columns_3_and_4 {
+            display: block;
+        }
+
+        /* End of Portfolio Display of 4 Columns */
+
+        /* Start of Portfolio Display of 1 Column */
+        .examples_1 {
+            width: 90%;
+            display: inline-block;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* End of Portfolio Display of 1 Column */
+
+/* End of Mobile Styles */
+
+
+
+/* Start of DESKTOP MEDIA QUERY */
+
+@media only screen and (min-width: 900px) {
+    h1 {font-size: 50px; line-height: 35px; color: #fcd21d;}
+    h2 {font-size: 16px; line-height: 35px; display: inline;}
+    h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300; color: #333333;}
+    h4 {font-size: 22px; line-height: 25px; font-weight: 700; color: #ffffff;}
+    h6 {font-size: 18px; line-height: 22px; text-transform: uppercase; color: #fcd21d;font-weight: 700; margin-top: 20px;}
+    p {font-size: 16px; line-height: 20px;}
+        
+    body {
+        margin: auto;
+    }
+    body div.body {
+        z-index: 9;
+        height: auto;
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+    }
+    div.row {
+        max-width: 1200px;
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+    .row:after, .inner_text:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        content: ".";
+    }
+
+    /* Start of HEADER */
+    body div.header {
+        z-index: 10;
+        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.3);
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0 0 0;
+        margin-bottom: 20px;
+    }
+    div.header_1 {
+        text-align: left;
+        float: left;
+        width: 60%;
+        display: inline-block;
+    }
+    div.header_2 {
+        text-align: right;
+        float: right;
+        width: 40%;
+        display: inline-block;
+    }
+    .download_link {
+        margin-top: 25px;
+    }
+    /* End of HEADER */
+
+    /* Start of SUMMARY */
+    div.image_module, div.text_inner {
+        display: inline-block;
+    }
+    img.profile_image {
+        border-radius: 50%;
+        width: 95%;
+        height: auto;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+    div.key_points > p {
+        color: #666666;
+        margin-bottom: 13px;
+        font-size: 14px;
+        display: inline-block;
+    }
+    div.column_key {
+        width: 24%;
+        text-align: left;
+        float: left;
+        margin-right:auto;
+        display: inline-block;
+    }
+    div.column_info {
+        width: 72%;
+        text-align: left;
+        display: inline-block;
+        float: right;
+    }
+    /* End of SUMMARY */
+
+    /* Start of BODY */
+    p.rpsectionhead {
+        font-size: 50px;
+        line-height: 1em;
+        padding-bottom: 0;
+        margin-top: 40px;
+    }
+
+    div.column_1_1 {}
+    div.rowportfolio {
+        padding: 27px 0 0 0;
+    }
+    div.section_title > div.text_inner > h3 {
+        margin-left: 50px;
+    }
+
+        /* Start of Portfolio Display - General */
+        h4.company_name {
+            padding: 11px;
+            margin-left: 0;
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+        div.section_title {
+            background-color: #333;
+            border-radius: 0 0 100% 0;
+            max-width: 450px;
+            height: 75px;
+        }
+        p.rightalign {
+            text-align: left;
+        }
+        p.leftalign {
+            text-align: left;
+        }
+        p.img_title {
+            font-weight: 700;
+            margin-top: 12px;
+        }
+        div.image > a >span.image_wrap > img {
+            width: 100%;
+        }
+        div#campusadvantage {
+            margin-top: 50px;
+        }
+        /* End of Portfolio Display - General */
+
+        /* Start of Portfolio Display of 2 Columns */
+        .examples_2 {}
+        div.column_1_2 {
+            width: 44%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+        }
+        div.column_2_2 {
+            width: 44%;
+            display: inline-block;
+            float: right;
+            text-align: center;
+        }
+        /* End of Portfolio Display of 2 Columns */
+
+        /* Start of Portfolio Display of 4 Columns */
+        .examples_4 {}
+        div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
+            width: 21%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+        }
+        div.column_1_4, div.column_2_4, div.column_3_4 {
+            margin-right:4%;
+        }
+        div.column_4_4 {
+            margin-right:0;
+        }
+        span.columns_1_and_2, span.columns_3_and_4 {
+            display: block;
+        }
+
+        /* End of Portfolio Display of 4 Columns */
+
+}
+/* End of DESKTOP MEDIA QUERY */
+
