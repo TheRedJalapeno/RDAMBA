@@ -1,5 +1,5 @@
 Recompress all images
---Done, 2019/09/12, 7mb->2mb
+--Done, 2019/09/12, 5mb->4mb
 
 Fix span block->inline-block
 --Done, 2019/09/13
@@ -7,9 +7,10 @@ Fix span block->inline-block
 Upload and reassign new versions of all images
 --Done, 2019/09/13
 
-Set div widths for img parents to prevent screen adjustments as slower connections load images
+**Page load time reduced by 90%**
 
-Implement lightbox for Desktop
+Set div widths for img parents to prevent screen adjustments as slower connections load images
+--Unnecessary due to 1) Load time reduction, 2) Image parent spans have set width already
 
 Redirect DNS
 
@@ -17,3 +18,5 @@ Set up Cloudflare
 
 Investigate native lazyload for FFX/Chrome
 
+Implement lightbox for Desktop
+--Other tasks bumped up in priority
