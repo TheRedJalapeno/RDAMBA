@@ -1,0 +1,17 @@
+Recompress all images
+--Done, 2019/09/12, 7mb->2mb
+
+Fix span block->inline-block
+
+Upload and reassign new versions of all images
+
+Set div widths for img parents to prevent screen adjustments as slower connections load images
+
+Implement lightbox for Desktop
+
+Redirect DNS
+
+Set up Cloudflare
+
+Investigate native lazyload for FFX/Chrome
+

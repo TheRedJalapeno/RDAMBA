@@ -2,7 +2,7 @@
  Stylesheet:     Robert D Allen MBA
  URL:            http://RobertDAllen.com/
  Author:         Robert Allen
- Version:        2019.09.11
+ Version:        2019.09.13
 */
 
 
@@ -123,7 +123,7 @@ div.column {
         margin-top: 40px;
     }
 
-    div.column_1_1 {}
+    div.column_1_1 {font-weight: inherit;}
     div.rowportfolio {
         padding: 27px 0 0 0;
     }
@@ -163,7 +163,7 @@ div.column {
         /* End of Portfolio Display - General */
 
         /* Start of Portfolio Display of 2 Columns */
-        .examples_2 {}
+        .examples_2 {font-weight: inherit;}
         div.column_1_2 {
             width: 44%;
             display: inline-block;
@@ -179,13 +179,13 @@ div.column {
         /* End of Portfolio Display of 2 Columns */
 
         /* Start of Portfolio Display of 4 Columns */
-        .examples_4 {}
+        .examples_4 {font-weight: inherit;}
         div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
             width: 42%;
             display: inline-block;
             text-align: center;
         }
-        div.column_1_4, div.column_3_4, {
+        div.column_1_4, div.column_3_4 {
             margin-right:auto;
             float: left;
         }
@@ -318,7 +318,7 @@ div.column {
         margin-top: 40px;
     }
 
-    div.column_1_1 {}
+    div.column_1_1 {font-weight: inherit;}
     div.rowportfolio {
         padding: 27px 0 0 0;
     }
@@ -358,7 +358,7 @@ div.column {
         /* End of Portfolio Display - General */
 
         /* Start of Portfolio Display of 2 Columns */
-        .examples_2 {}
+        .examples_2 {font-weight: inherit;}
         div.column_1_2 {
             width: 44%;
             display: inline-block;
@@ -374,7 +374,7 @@ div.column {
         /* End of Portfolio Display of 2 Columns */
 
         /* Start of Portfolio Display of 4 Columns */
-        .examples_4 {}
+        .examples_4 {font-weight: inherit;}
         div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
             width: 21%;
             display: inline-block;
