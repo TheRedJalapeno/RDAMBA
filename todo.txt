@@ -2,8 +2,10 @@ Recompress all images
 --Done, 2019/09/12, 7mb->2mb
 
 Fix span block->inline-block
+--Done, 2019/09/13
 
 Upload and reassign new versions of all images
+--Done, 2019/09/13
 
 Set div widths for img parents to prevent screen adjustments as slower connections load images
 

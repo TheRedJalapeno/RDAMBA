@@ -162,6 +162,13 @@ div.column {
         }
         /* End of Portfolio Display - General */
 
+        /* Start of Portfolio Display of 1 Column */
+        .examples_1 {
+            display: inline-block;
+            padding-bottom: 25px;
+        }
+        /* End of Portfolio Display of 1 Column */
+
         /* Start of Portfolio Display of 2 Columns */
         .examples_2 {font-weight: inherit;}
         div.column_1_2 {
@@ -194,7 +201,7 @@ div.column {
             float: right;
         }
         span.columns_1_and_2, span.columns_3_and_4 {
-            display: block;
+            display: inline-block;
         }
 
         /* End of Portfolio Display of 4 Columns */
@@ -357,8 +364,18 @@ div.column {
         }
         /* End of Portfolio Display - General */
 
+        /* Start of Portfolio Display of 1 Column */
+        .examples_1 {
+            display: inline-block;
+            padding-bottom: 25px;
+        }
+        /* End of Portfolio Display of 1 Column */
+
         /* Start of Portfolio Display of 2 Columns */
-        .examples_2 {font-weight: inherit;}
+        .examples_2 {
+            display: inline-block;
+            padding-bottom: 25px;
+        }
         div.column_1_2 {
             width: 44%;
             display: inline-block;
@@ -374,7 +391,10 @@ div.column {
         /* End of Portfolio Display of 2 Columns */
 
         /* Start of Portfolio Display of 4 Columns */
-        .examples_4 {font-weight: inherit;}
+        .examples_4 {
+            display: inline-block;
+            padding-bottom: 25px;
+        }
         div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
             width: 21%;
             display: inline-block;
