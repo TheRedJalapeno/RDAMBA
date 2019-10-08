@@ -18,22 +18,9 @@ Since then my work has been largely design and development focused, with startup
 
 ## Additional Resources
 
-[![LinkedIn](/assets/fontawesome/linkedin-brands.svg#thumbnail "LinkedIn") LinkedIn](https://www.linkedin.com/in/robertallenmba/)
+[LinkedIn](https://www.linkedin.com/in/robertallenmba/)
 
-[![Github](/assets/fontawesome/github-square-brands.svg#thumbnail "Github") Github](https://github.com/RobertDAllen)
+[Github](https://github.com/RobertDAllen)
 
-[![Portfolio](/assets/fontawesome/images-solid.svg#thumbnail "Portfolio") Portfolio](https://robertdallen.github.io/)
+[Portfolio](https://robertdallen.github.io/)
 
-
-<style>
-img[src*="#thumbnail"] {
-   width:20px;
-   height:20px;
-   line-height: 20px;
-   margin-bottom: -2px;
-   margin-left: 20px;
-}
-h3 {
-    margin-bottom: -10px;
-}
-</style>
