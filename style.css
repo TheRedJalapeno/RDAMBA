@@ -238,7 +238,7 @@ button.visible {
         padding: 25px;
     }
     div.footer > div.row > span {
-        width: 19%;
+        width: 100%;
         text-align: center;
         flex-grow: 2;
     }
@@ -328,7 +328,7 @@ button.visible {
     
     /* Start of FOOTER */
     div.footer > div.row > span {
-        width: 100%;
+        width: 19%;
         text-align: center;
     }
     /* End of FOOTER */
