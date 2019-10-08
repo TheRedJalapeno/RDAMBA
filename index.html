@@ -10,7 +10,7 @@
     <![endif]-->
     <title>Robert D Allen, MBA</title>
 </head>
-<body>
+<body class="dayMode">
     <div class="header">
         <div class="examples_2 container">
             <div class="column_1_2">
@@ -52,6 +52,23 @@
                 </div> <!-- .column_1_4 -->
                 <div class="column_info">
                     <div class="text_inner">
+                        <button id="night" type="button" onclick="
+                            document.body.classList.add('nightMode'), 
+                            document.body.classList.remove('dayMode'), 
+                            document.getElementById('night').classList.add('hidden'), 
+                            document.getElementById('day').classList.remove('hidden'),
+                            document.getElementById('day').classList.add('visible'), 
+                            document.getElementById('night').classList.remove('visible')
+                            ">Try Night Mode!</button>
+                        <button id="day" class="hidden" type="button" onclick="
+                            document.body.classList.add('dayMode'), 
+                            document.body.classList.remove('nightMode'), 
+                            document.getElementById('day').classList.add('hidden'), 
+                            document.getElementById('night').classList.remove('hidden'),
+                            document.getElementById('night').classList.add('visible'), 
+                            document.getElementById('day').classList.remove('visible')
+                            ">Try Day Mode!</button>
+                        <hr>
                         <h3>Amazon</h3>
                         <h2>Marketing Manager, Email Developer</h2><span> – Nov 2018 to present</span>
                         <p>My skip level described my activities as “the most extensive marketing we have ever done.”</p>
@@ -728,6 +745,8 @@
 
 
 <!-- End of FOOTER -->
+<script>
+</script>
 
 </body>
 </html>

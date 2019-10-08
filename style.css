@@ -9,13 +9,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700&display=swap');
 
 
-h1, h2, h3, h4, h5, h6, p, span {font-family: 'Raleway', sans-serif; margin: 8px 0px; color: #666666;}
+h1, h2, h3, h4, h5, h6, p, span {font-family: 'Raleway', sans-serif; margin: 8px 0px;}
 
 h1 {font-size: 40px; line-height: 35px; color: #fcd21d;}
 h2 {font-size: 16px; line-height: 35px; display: inline;}
-h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300; color: #333333;}
+h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300;}
 h4 {font-size: 22px; line-height: 25px; font-weight: 700; color: #ffffff;}
-h5 {font-size: 25px; line-height: 18px; font-style: italic; color: #333333;}
+h5 {font-size: 25px; line-height: 18px; font-style: italic;}
 h6 {font-size: 18px; line-height: 22px; text-transform: uppercase; color: #fcd21d;font-weight: 700; margin-top: 20px;}
 p {font-size: 16px; line-height: 20px; display: block;}
 strong {font-weight: 700;}
@@ -25,13 +25,21 @@ hr {margin: 20px 0;}
 
 body {
     margin: auto;
+    color: #666666;
+}
+body.nightMode {
+    background-color: #333333;
+    color: #f2f2f2;
+}
+body.dayMode {
+    background-color: #ffffff;
+    color: #666666;
 }
 body div.body {
     z-index: 9;
     height: auto;
     display: inline-block;
     width: 100%;
-    background-color: #fff;
 }
 div.row {
     max-width: 1200px;
@@ -53,7 +61,42 @@ div.column {
     display: inline-block;
     margin: auto;
 }
-
+button#night, button#day {
+    color: #333333;
+    border: none;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.4);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+button#night {
+    color: #f2f2f2;
+    background-color: #333333;
+}
+button#day {
+    color: #333333;
+    background-color: #ffffff;
+}
+button.hidden {
+    visibility: hidden;
+    width: 0;
+    padding: 0;
+    height: 0;
+    float: right;
+}
+button.visible {
+    visibility: visible;
+    width: auto;
+    padding: 10px 15px;
+    height: auto;
+}
 
 /* Start of Mobile Styles */ 
 
@@ -78,7 +121,6 @@ div.column {
         box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.3);
         display: inline-block;
         width: 100%;
-        background-color: #fff;
         padding: 10px 0 0 0;
         margin-bottom: 20px;
     }
@@ -101,7 +143,6 @@ div.column {
         margin-top: 20px;
     }
     div.key_points > p {
-        color: #666666;
         margin-bottom: 13px;
         font-size: 14px;
     }
