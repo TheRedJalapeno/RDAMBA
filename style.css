@@ -12,7 +12,7 @@ html {scroll-behavior: smooth;}
 
 h1, h2, h3, h4, h5, h6, p, span {font-family: 'Raleway', sans-serif; margin: 8px 0px;}
 
-h1 {font-size: 40px; line-height: 35px; color: #fcd21d;}
+h1 {font-size: 30px; line-height: 35px; color: #fcd21d;}
 h2 {font-size: 16px; line-height: 35px; display: inline;}
 h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300;}
 h4 {font-size: 22px; line-height: 25px; font-weight: 700; color: #ffffff;}
@@ -37,14 +37,8 @@ body.dayMode {
 }
 body div.body {
     z-index: 9;
-    height: auto;
-    display: inline-block;
-    width: 100%;
-}
-div.row {
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
+    width: auto;
+    margin: 0 10%;
     display: block;
 }
 .row:after, .inner_text:after {
@@ -101,31 +95,28 @@ button.visible {
 /* Start of Mobile Styles */ 
 
     /* Start of HEADER  */
-    @media screen and (max-width: 500px) {
-        h1.rpheadline {
-            font-size: 30px;
-        }
-    }
-    div.header .container {
-        max-width: 1200px;
-        width: 80%;
-        margin: auto;
-    }
-    div.header .examples_2 .column_1_2, div.header .examples_2 .column_2_2 {
-        width: 100%;
-        text-align: left;
-        align-self: flex-start;
-    }
-    div.header {
+    nav.header {
         z-index: 10;
         box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.3);
-        display: inline-block;
+        display: block;
         width: 100%;
         padding: 10px 0 0 0;
         margin-bottom: 20px;
     }
-    .download_link {
-        margin-top: 18px;
+    nav.header > div.row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    nav.header > div.row > div  {
+        width: 100%;
+        text-align: center;
+        align-self: center;
+    }
+    @media screen and (max-width: 500px) {
+        h1.rpheadline {
+            font-size: 30px;
+        }
     }
     /* End of HEADER */
 
@@ -270,22 +261,35 @@ button.visible {
 
 /* Start of DESKTOP MEDIA QUERY */
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 950px) {
     /* Start of HEADER */
-    div.header .examples_2 .column_1_2 {
-        text-align: left;
+    nav.header > div.row {
+        max-width: 1200px;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
     }
-    div.header .examples_2 .column_2_2 {
-        text-align: right;
-    }
-    div.header .examples_2 .column_1_2, div.header .examples_2 .column_2_2 {
+    nav.header > div.row > div {
         width: auto;
+        width: 33%;
+    }
+    nav.header > div.row > div.navLeft {
+        text-align: left;
         align-self: flex-start;
     }
-    .download_link {
-        margin-top: 25px;
+    nav.header > div.row > div.navRight {
+        text-align: right;
     }
     /* End of HEADER */
+    /* Start of BODY */
+    body div.body {
+        z-index: 9;
+        max-width: 1200px;
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+    /* End of BODY */
 
     /* Start of SUMMARY */
     div.image_module {
