@@ -229,8 +229,10 @@ button.visible {
         div.stats > hr {
             margin: 20px 10px;
         }
-        div#campusadvantage {
-            margin-top: 50px;
+        div.sectionEmployer {
+            height: 5px;
+            position: relative;
+            top: -125px;
         }
         /* End of Portfolio Display */
     /* End of BODY */
@@ -357,6 +359,9 @@ button.visible {
         }
         div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
             width: 21%;
+        }
+        div#campusadvantage {
+            margin-bottom: 45px;
         }
         /* End of Portfolio Display*/
     /* End of BODY */
