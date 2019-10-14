@@ -26,6 +26,8 @@ hr {margin: 20px 0;}
 body {
     margin: auto;
     color: #666666;
+    position: absolute;
+    width: 100%;
 }
 body.nightMode {
     background-color: #333333;
@@ -34,12 +36,6 @@ body.nightMode {
 body.dayMode {
     background-color: #ffffff;
     color: #666666;
-}
-body div.body {
-    z-index: 9;
-    width: auto;
-    margin: 0 10%;
-    display: block;
 }
 .row:after, .inner_text:after {
     display: block;
@@ -102,6 +98,8 @@ button.visible {
         width: 100%;
         padding: 10px 0 0 0;
         margin-bottom: 20px;
+        background-color: inherit;
+        position: fixed;
     }
     nav.header > div.row {
         display: flex;
@@ -112,6 +110,9 @@ button.visible {
         width: 100%;
         text-align: center;
         align-self: center;
+    }
+    h1.rpheadline {
+        margin-top: 4px;
     }
     div.rowIcons {
         display: flex;
@@ -128,6 +129,12 @@ button.visible {
     }
     /* End of HEADER */
 
+    /* Start of Body */
+    body div.body {
+        width: auto;
+        margin: 160px 10% 0 10%;
+        display: block;
+    }
     /* Start of SUMMARY */
     div.image_module {
         width: 100%;
@@ -301,10 +308,10 @@ button.visible {
     /* End of HEADER */
     /* Start of BODY */
     body div.body {
-        z-index: 9;
         max-width: 1200px;
         width: 80%;
         margin: auto;
+        margin-top: 110px;
         display: block;
     }
     /* End of BODY */
