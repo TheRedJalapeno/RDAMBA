@@ -13,7 +13,7 @@ html {scroll-behavior: smooth;}
 h1, h2, h3, h4, h5, h6, p, span, a {font-family: 'Raleway', sans-serif; margin: 8px 0px;}
 
 h1 {font-size: 30px; line-height: 35px; color: #fcd21d;}
-h2 {font-size: 16px; line-height: 35px; display: inline;}
+h2 {font-size: 16px; line-height: 35px; }
 h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300;}
 h4 {font-size: 22px; line-height: 25px; font-weight: 700; color: #ffffff;}
 h5 {font-size: 25px; line-height: 18px; font-style: italic;}
@@ -88,6 +88,10 @@ button.visible {
     height: auto;
 }
 
+div.nightmodebutton {
+    display:none;
+}
+
 /* Start of Mobile Styles */ 
 
     /* Start of HEADER  */
@@ -129,12 +133,6 @@ button.visible {
     }
     /* End of HEADER */
 
-    /* Start of Body */
-    body div.body {
-        width: auto;
-        margin: 160px 10% 0 10%;
-        display: block;
-    }
     /* Start of SUMMARY */
     div.image_module {
         width: 100%;
@@ -168,6 +166,11 @@ button.visible {
     /* End of SUMMARY */
 
     /* Start of BODY */
+    body div.body {
+        width: auto;
+        margin: 160px 10% 0 10%;
+        display: block;
+    }
     p.rpsectionhead {
         color: #fcd21d;
         font-size: 24px;
@@ -179,8 +182,16 @@ button.visible {
     div.rowportfolio {
         padding: 27px 0 0 0;
     }
-
-        /* Start of Portfolio Display - General */
+    h2.jobtitle {
+        margin: 0;
+        line-height: 1em;
+        font-size: 1.3em;
+    }
+    span.dateRange {
+        font-style: italic;
+        font-size: .9em;
+    }
+    /* Start of Portfolio Display - General */
         div.divider {
             width: 100%; 
             height: 5px; 
@@ -201,7 +212,6 @@ button.visible {
             margin-bottom: -5px;
             font-weight: 600;
         }
-
         .examples_1, .examples_2, .examples_4 {
             display: flex;
             justify-content: space-between;
@@ -270,6 +280,77 @@ button.visible {
     }
     /* End of FOOTER */
 
+    /* Start of Timeline */
+    .timeline_sm {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        height: 80vh;
+        position: relative;
+        margin: 0 -4%;
+    }
+    .timeline_sm::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background: #333;
+    }
+    div.job {
+        position: relative;
+        width: 50%;
+        border-radius: 25px;
+    }
+    .job:nth-child(even) {
+        align-self: flex-end;
+    }
+    .job:nth-child(even)::after {
+        left: unset;
+        right: -10px;
+        border-width: 10px 0 0 10px;
+    }
+    span.job-wrapper {
+            display: inline-block;
+            font-size: 14px;
+            margin: 5px 15px;
+    }
+    .job-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0;
+    }
+    .job-start, .job-end {
+        display: inline-block;
+        margin-top: 0;
+    }
+    .jobz, .jobb, .jobd, .jobf {
+        color: black;
+    }
+    .joba, .jobc, .jobe, .jobg {
+        color: white;
+    }
+    .jobb > span > img.job-logo,
+    .jobz > span > img.job-logo {
+        display: none;
+    }
+    div.job {
+        min-height: 70px;
+    }
+    .job-title {
+        font-size: 15px;
+        margin: 0;
+    }
+    img.job-logo {
+        display: none;
+    }
+    span.job-start, span.job-end {
+        margin: 0 0 0 0;
+    }
+    /* End of Timeline */
+
 /* End of Mobile Styles */
 
 /* -------------------------------------------------- */
@@ -316,6 +397,9 @@ button.visible {
         margin-top: 110px;
         display: block;
     }
+    div.nightmodebutton {
+        display:block;
+    }
     /* End of BODY */
 
     /* Start of SUMMARY */
@@ -330,10 +414,10 @@ button.visible {
         display: block;
     }
     div.column_key {
-        width: 24%;
+        width: 31%;
     }
     div.column_info {
-        width: 72%;
+        width: 65%;
         float: right;
     }
     /* End of SUMMARY */
@@ -372,6 +456,37 @@ button.visible {
         text-align: center;
     }
     /* End of FOOTER */
-}
-/* End of DESKTOP MEDIA QUERY */
 
+
+      /* Start of Timeline */
+        div.timeline_sm{
+            max-width: 700px;
+            margin: 0;
+        }
+        div.job {
+            max-width:350px;
+            min-height: 85px;
+        }
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0;
+        }
+        .job-start, .job-end {
+            display: inline-block;
+            margin-top: 0;
+        }
+        span > img.job-logo {
+            display: block;
+            width: 50px;
+            border-radius: 15px;
+        }
+        .jobb > span > img.job-logo,
+        .jobz > span > img.job-logo {
+            display: none;
+        }
+        /* End of Timeline */
+
+    }
+/* End of DESKTOP MEDIA QUERY */
