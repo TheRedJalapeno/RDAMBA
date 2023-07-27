@@ -1,24 +1,18 @@
 # RobertDAllen.github.io
 
 ## Purpose
-This site was built as a personal portfolio page to showcase some of what I have made while working at Amazon and Campus Advantage. 
-The work shown here includes screenshots of websites, landing pages, and email design work, along with marketing efforts I led at Amazon.
+This site was built as a personal portfolio page. My web dev work is no longer particularly relevant and my work over the last few years is under tight NDA, so the page has been thinned out. 
 
 ## About the Author
 ### Robert D Allen, MBA
-I am a tinkerer. Having collected four degrees, spending some years launching businesses for clients, tooling around with robotics, and building a quad-copter before drones were invented, my path has led me back to a keyboard.
+A born tinkerer, roboticist, and frustratingly optimistic creator. Before college I built a quad-copter, a year before drones were invented. In college I designed a triangular ROV (Remotely operated vehicle, submersible) for competition. When working as a recruiter I created an algorithm for establishing objective career progress. At Amazon, the machine learning marketing platform fell to me, so I designed a multivariate marketing schema which enabled dozens of assets to generate thousands of permutations for rapid global testing and iteration. 
 
-When I learned HTML my computer did not have a modem. Thankfully, back then Help docs were usually HTML documents installed locally so I had a pretty serious cache to draw from. This was before CSS existed. 
+Always chase the dopamine. 
 
-Over the years my casual interest languished as I got caught up in mechanical and electrical engineering. Robotics was a real passion for a while, but when the economy crashed just before my degree wrapped up my focus shifted to the market with the lowest barrier to entry for income - web design. 
-
-After finishing my BS my income was largely dependent upon helping college friends build websites and launch businesses. Eventually grad school proved too appealing to resist, so I joined Rochester Institute of Technology in their award winning Entrepreneurship program for my MBA, collecting a total of three concentrations by the time I was done, including Entrepreneurship, Product Commercialization (marketing), and Technology Management.
-
-Since then my work has been largely design and development focused, with startup strategy & marketing gigs along the way. 
 
 ## Additional Resources
 
-[LinkedIn](https://www.linkedin.com/in/robertallenmba/)
+[LinkedIn](https://www.linkedin.com/in/robertdallenmba/)
 
 [Github](https://github.com/RobertDAllen)
 
