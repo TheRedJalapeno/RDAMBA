@@ -13,13 +13,14 @@ const jobs = [
 
 const timelineStart = new Date(jobs[jobs.length-1].startDate);
 const timelineEnd = new Date(jobs[0].endDate);
-
 const timelineDuration = timelineEnd.getMonth() - timelineStart.getMonth() + 
                          (12 * (timelineEnd.getFullYear() - timelineStart.getFullYear()));
 
 jobs.forEach(job => {
   const jobElement = document.createElement('div');
   const jobWrapper = document.createElement('span');
+  const logoWrapper = document.createElement('span');
+  const detailsWrapper = document.createElement('span');
   const jobLogo = document.createElement('img');
   const jobTitle = document.createElement('span');
   const jobCompany = document.createElement('span');
@@ -37,21 +38,33 @@ jobs.forEach(job => {
   jobEndDate.className = 'job-end';
   jobWrapper.className = 'job-wrapper';
   jobLogo.className = 'job-logo';
+  logoWrapper.className = 'logo-wrapper';
+  detailsWrapper.className = 'details-wrapper';
 
   jobTitle.innerText = job.title;
   jobCompany.innerText = job.company;
   jobStartDate.innerText = job.startDate;
   jobEndDate.innerText = job.endDate;
-  jobLogo.src = job.logo;
+  
+  if (job.logo !== 'null') {
+    jobLogo.src = job.logo;
+    logoWrapper.appendChild(jobLogo);
+} else {
+    logoWrapper.classList.add('hidden');
+}
 
-  jobWrapper.appendChild(jobLogo);
-  jobWrapper.appendChild(jobTitle);
-  jobWrapper.appendChild(document.createTextNode(""));
-  jobWrapper.appendChild(jobCompany);
-  jobWrapper.appendChild(document.createTextNode(", from "));
-  jobWrapper.appendChild(jobStartDate);
-  jobWrapper.appendChild(document.createTextNode(" to "));
-  jobWrapper.appendChild(jobEndDate);
+  logoWrapper.appendChild(jobLogo);  // append logo to logoWrapper
+
+  detailsWrapper.appendChild(jobTitle);
+  detailsWrapper.appendChild(document.createTextNode(" "));
+  detailsWrapper.appendChild(jobCompany);
+  detailsWrapper.appendChild(document.createTextNode(", "));
+  detailsWrapper.appendChild(jobStartDate);
+  detailsWrapper.appendChild(document.createTextNode(" to "));
+  detailsWrapper.appendChild(jobEndDate);
+
+  jobWrapper.appendChild(logoWrapper);
+  jobWrapper.appendChild(detailsWrapper); // append details to detailsWrapper
 
   jobElement.classList.add(job.class);
   jobElement.className += ' job';
