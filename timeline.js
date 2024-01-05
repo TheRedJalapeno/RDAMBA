@@ -1,13 +1,12 @@
 const timelineElement = document.getElementById('timeline');
 
 const jobs = [
-  { title: 'Angel Investor', company: 'AiryChat AI', startDate: '2023', endDate: new Date().getFullYear().toString(), color: '#E55C20', logo: 'assets/RDAMBA_Logo_AiryChat.jpg', class: 'jobairy'  },
-  { title: 'Director', company: 'Discover', startDate: '2022', endDate: '2023', color: '#E55C20', logo: 'assets/RDAMBA_Logo_Discover.jpg', class: 'jobg'  },
-  { title: 'Senior Manager', company: 'Amazon', startDate: '2020', endDate: '2022', color: '#FF9900', logo: 'assets/RDAMBA_Logo_Amazon.jpg', class: 'jobf'  },
-  { title: 'Senior Manager', company: 'Holland America', startDate: '2019', endDate: '2020', color: '#132356', logo: 'assets/RDAMBA_Logo_Holland.jpg', class: 'jobe'  },
-  { title: 'Manager', company: 'Amazon', startDate: '2018', endDate: '2019', color: '#FF9900', logo: 'assets/RDAMBA_Logo_Amazon.jpg', class: 'jobd'  },
-  { title: 'Head of Product', company: 'Splash Mktg', startDate: '2010', endDate: '2018', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
-  { title: 'General Manager', company: 'FITV', startDate: '2007', endDate: '2010', color: 'wheat', logo: 'assets/RDAMBA_Logo_FITV.jpg', class: 'jobz' },
+  { title: 'Cofounder', company: 'AiryChat AI', startDate: '2023', endDate: new Date().getFullYear().toString(), color: '#E55C20', logo: 'assets/RDAMBA_Logo_AiryChat.jpg', class: 'jobairy'  },
+  { title: 'Director of Data, Product, Marketing, and Strategy', company: 'Discover', startDate: '2022', endDate: '2023', color: '#E55C20', logo: 'assets/RDAMBA_Logo_Discover.jpg', class: 'jobg'  },
+  { title: 'Product Marketing Manager', company: 'Amazon', startDate: '2020', endDate: '2022', color: '#FF9900', logo: 'assets/RDAMBA_Logo_Amazon.jpg', class: 'jobf'  },
+  { title: 'Email Developer', company: 'Holland America', startDate: '2019', endDate: '2020', color: '#132356', logo: 'assets/RDAMBA_Logo_Holland.jpg', class: 'jobe'  },
+  { title: 'Marketing Manager', company: 'Amazon', startDate: '2018', endDate: '2019', color: '#FF9900', logo: 'assets/RDAMBA_Logo_Amazon.jpg', class: 'jobd'  },
+  { title: 'Business Owner', company: 'Splash Mktg', startDate: '2010', endDate: '2018', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
 ];
 
 const timelineStart = new Date(jobs[jobs.length-1].startDate);
