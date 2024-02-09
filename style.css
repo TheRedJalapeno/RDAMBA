@@ -128,7 +128,7 @@ div.nightmodebutton {
         align-items: center;
         flex-wrap: wrap;
         padding: 0 5px;
-        max-width: 300px;
+        max-width: 200px;
         margin: auto;
     }
     div.rowIcons > a {
@@ -306,6 +306,7 @@ div.nightmodebutton {
         position: relative;
         width: 50%;
         border-radius: 1em;
+        min-height: 100px;
     }
     .job:nth-child(even) {
         align-self: flex-end;
@@ -339,9 +340,6 @@ div.nightmodebutton {
     .jobb > span > img.job-logo,
     .jobz > span > img.job-logo {
         display: none;
-    }
-    div.job {
-        min-height: 70px;
     }
     .job-title {
         font-size: 15px;
