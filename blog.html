@@ -1,0 +1,13 @@
+<div id="blogContent"></div>
+<script>
+  window.onload = function() {
+    fetch('path/to/your/post.md')
+      .then(response => response.text())
+      .then(text => {
+        var converter = new showdown.Converter(),
+            html = converter.makeHtml(text);
+        document.getElementById('blogContent').innerHTML = html;
+      });
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>

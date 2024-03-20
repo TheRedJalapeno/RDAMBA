@@ -1,12 +1,12 @@
 const timelineElement = document.getElementById('timeline');
 
 const jobs = [
-  { title: 'Paternity Leave', company: 'Stay At Home Dad', startDate: 'June 2023', endDate: new Date().getFullYear().toString(), logo: 'assets/superhero.png', color: '#E55C20', class: 'jobairy'  },
+  { title: 'VP Product Marketing', company: 'AiryChat AI', startDate: 'May 2023', endDate: new Date().getFullYear().toString(), logo: 'assets/RDAMBA_Logo_AiryChat.jpg', color: '#E55C20', class: 'jobairy'  },
   { title: 'Director of Marketing Technology', company: 'Discover', startDate: 'March 2022', endDate: 'May 2023', color: '#E55C20', logo: 'assets/RDAMBA_Logo_Discover.jpg', class: 'jobg'  },
   { title: 'Product Marketing Manager', company: 'Amazon', startDate: 'August 2020', endDate: 'February 2022', color: '#FF9900', logo: 'assets/RDAMBA_Logo_Amazon.jpg', class: 'jobf'  },
-  { title: 'Senior Email Engineer', company: 'Splash Mktg', startDate: 'October 2018', endDate: 'July 2020', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
-  { title: 'Senior Product Marketing Manager', company: 'Splash Mktg', startDate: '2014', endDate: '2018', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
-  { title: 'Product Marketing Manager', company: 'Splash Mktg', startDate: '2010', endDate: '2014', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
+  { title: 'Director of Product Marketing', company: 'Splash Mktg', startDate: 'February 2018', endDate: 'July 2020', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
+  { title: 'Senior Manager of Product Marketing', company: 'Splash Mktg', startDate: 'February 2014', endDate: 'February 2018', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
+  { title: 'Senior Product Marketing Manager', company: 'Splash Mktg', startDate: 'May 2010', endDate: 'February 2014', color: '#00a8ff', logo: 'assets/RDAMBA_Logo_Splash.jpg', class: 'jobc'  },
 ];
 
 const timelineStart = new Date(jobs[jobs.length-1].startDate);
