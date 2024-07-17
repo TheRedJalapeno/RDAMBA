@@ -135,6 +135,9 @@ div.nightmodebutton {
         text-decoration: none;
         margin: 0;
     }
+    div.navRight > a {
+        line-height: 2em;
+    }
     /* End of HEADER */
 
     /* Start of SUMMARY */
@@ -149,6 +152,7 @@ div.nightmodebutton {
         height: auto;
         float: right;
         margin-top: 20px;
+        min-width: 100px;
     }
     div.key_points > p {
         margin-bottom: 13px;
@@ -195,6 +199,33 @@ div.nightmodebutton {
         font-style: italic;
         font-size: .9em;
     }
+    /* Start of Project Flexbox */
+    .project-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .project-container > div {
+        background-color: #f1f1f1;
+        width: auto;
+        padding: 15px;
+        margin: 10px;
+        text-align: left;
+        line-height: 1.3em;
+        font-size: 1.2em;
+        border-radius: 8px;
+    }
+    .project-image {
+        max-width: 150px;
+        border-radius: 8px;
+        float: right;
+        margin: 0 0 0 25px;
+    }
+    .project-button {
+        display: block;
+        margin: 15px 0;
+    }
+
     /* Start of Portfolio Display - General */
         div.divider {
             width: 100%; 
@@ -394,6 +425,9 @@ div.nightmodebutton {
         text-align: right;
         align-self: center;
     }
+    div.navRight > a {
+        line-height: 2em;
+    }
     /* End of HEADER */
     /* Start of BODY */
     body div.body {
@@ -418,6 +452,7 @@ div.nightmodebutton {
         margin-bottom: 20px;
         margin-top: 15px;
         display: block;
+        min-width: 100px;
     }
     div.column_key {
         width: 26%;
