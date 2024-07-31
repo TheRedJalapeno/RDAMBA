@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="assets\2024-07-17_robert_headshot_favicon.jpg" type="image/jpeg" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Robert D Allen, MBA</title>
 </head>
+
 <body class="dayMode" id="home">
     <nav class="header">
         <div class="row container">
@@ -19,14 +22,16 @@
                 <h1 class="rpheadline">Robert D Allen, MBA</h1>
                 <div class="rowIcons">
                     <!--<a class="navIcon" target="_blank" href="https://www.linkedin.com/in/robertdallenmba/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a class="navIcon" target="_blank" href="https://github.com/RobertDAllen"><i class="fab fa-github"></i> Github</a>-->
+                    <a class="navIcon" target="_blank" href="https://github.com/TheRedJalapeno"><i class="fab fa-github"></i> Github</a>-->
                 </div>
             </div>
-            <div class="navRight">                
-                
-                    <a class="navIcon" target="_blank" href="https://www.linkedin.com/in/robertdallenmba/"><i class="fab fa-linkedin-in"></i> LinkedIn</a><br>
-                    <a class="navIcon" target="_blank" href="https://github.com/RobertDAllen"><i class="fab fa-github"></i> Github</a><br>
-                
+            <div class="navRight">
+
+                <a class="navIcon" target="_blank" href="https://www.linkedin.com/in/robertdallenmba/"><i
+                        class="fab fa-linkedin-in"></i> LinkedIn</a><br>
+                <a class="navIcon" target="_blank" href="https://github.com/TheRedJalapeno"><i
+                        class="fab fa-github"></i> Github</a><br>
+
             </div>
         </div>
     </nav>
@@ -39,18 +44,25 @@
                 <!-- Start of LEFT SIDEBAR -->
                 <div class="column_key">
                     <div class="image_module">
-                        <span><img class="profile_image" src="assets/2024-07-17_robert_headshot.jpg?w=500&amp;ssl=1" srcset="assets/2024-07-17_robert_headshot.jpg?w=500&amp;ssl=1" alt="Robert after a 10k in Seattle" title="Robert after running the 'Beat the Blerch' 10k in August 2019"></span>
+                        <span><img class="profile_image" src="assets/2024-07-17_robert_headshot.jpg?w=500&amp;ssl=1"
+                                srcset="assets/2024-07-17_robert_headshot.jpg?w=500&amp;ssl=1"
+                                alt="Robert after a 10k in Seattle"
+                                title="Robert after running the 'Beat the Blerch' 10k in August 2019"></span>
                     </div>
                     <div class="text_inner">
                         <div class="key_points">
                             <h6>Key Points</h6>
-                            <p><strong>2 books published</strong><br>in 2024</p>
+                            <p><strong>3 books published</strong><br>in 2024</p>
                             <p><strong>15 years</strong><br>professional experience</p>
-                            <p><strong>Master of Business Administration</strong><br> from Rochester Institute of&nbsp;Technology</p>
-                            <p><strong>Bachelor of Science<br>International Business &&nbsp;Economics</strong><br> from Florida Institute of&nbsp;Technology</p>
-                            <p><strong>Lean Six Sigma Yellow Belt</strong><br> from Rochester Institute of&nbsp;Technology</p>
+                            <p><strong>Master of Business Administration</strong><br> from Rochester Institute
+                                of&nbsp;Technology</p>
+                            <p><strong>Bachelor of Science<br>International Business &&nbsp;Economics</strong><br> from
+                                Florida Institute of&nbsp;Technology</p>
+                            <p><strong>Lean Six Sigma Yellow Belt</strong><br> from Rochester Institute
+                                of&nbsp;Technology</p>
                             <p><strong>Ex-Amazon</strong></p>
-                            <p><a href="https://www.linkedin.com/in/robertdallenmba/" target="_blank" rel="noopener noreferrer">Read more on LinkedIn</a></p>
+                            <p><a href="https://www.linkedin.com/in/robertdallenmba/" target="_blank"
+                                    rel="noopener noreferrer">Read more on LinkedIn</a></p>
                         </div>
                         <hr>
                         <div class="nightmodebutton">
@@ -74,65 +86,227 @@
                     </div> <!-- .text_inner -->
                 </div> <!-- .column_1_4 -->
                 <!-- End of LEFT SIDEBAR -->
-                
-                <!-- Start of TIMELINE -->
+
+                <!-- Start of BODY -->
+                <div class="column_info">
+                    <h6>Current Activities</h6>
+                    <P>Retiring from my second career unlocked the potential of pluralization. My attention is
+                        finally splitting in fashions both provocative to my energies and facilitative of
+                        my&nbsp;abilities.</P>
+                    <p>Career 1 was business ownership, running my own company nearly 10 years.<br>Career 2 was
+                        corporate leadership, which lasted a hair under 4 years.<br>Career 3 is still unfurling.</p>
+                </div>
+
+                <!-- Start of SubNav -->
+                <div class="column_info">
+                    <div class="text_inner subnav">
+                        <button id="show-all" class="subnav-btn-link" type="button" onclick="
+                            showAll()">
+                            <div class="subnav-btn" id="show-all-button">
+                                <div>
+                                    <h3>Show All</h3>
+                                </div>
+                            </div>
+                        </button>
+                        <button id="projects" class="subnav-btn-link" type="button" onclick="
+                            toggleVisibility('projects', ['books', 'resume'])">
+                            <div class="subnav-btn" id="projects-button">
+                                <div>
+                                    <h3>Projects</h3>
+                                </div>
+                            </div>
+                        </button>
+                        <button id="books" class="subnav-btn-link" type="button" onclick="
+                            toggleVisibility('books', ['projects', 'resume'])">
+                            <div class="subnav-btn" id="books-button">
+                                <div>
+                                    <h3>Books</h3>
+                                </div>
+                            </div>
+                        </button>
+                        <button id="resume" class="subnav-btn-link" type="button" onclick="
+                            toggleVisibility('resume', ['books', 'projects'])">
+                            <div class="subnav-btn" id="resume-button">
+                                <div>
+                                    <h3>Resume</h3>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Start of CURRENT ACTIVITIES -->
                 <div class="column_info">
                     <div class="text_inner">
-                        <h6>Current Activities</h6>
-                        <P>Retiring from my second career unlocked the potential of pluralization. My attention is finally splitting in fashions both provocative to my energies and facilitative of my&nbsp;abilities.</P>
-                        <p>Career 1 was business ownership, running my own company nearly 10 years.<br>Career 2 was corporate leadership, which lasted a hair under 4 years.<br>Career 3 is still unfurling.</p>
                         <div class="project-container">
-                            <div>
+                            <div class="books">
                                 <h3>Kolnari Prologue</h3>
-                                <a href="https://a.co/d/bULMHyd" target="_blank"><img src="assets/2024_kolnari_prologue.jpg" class="project-image"></a>
-                                <p class="project-text">The Kolnari Empire has stood for hundreds of years, exploring and cultivating the galaxy. A small xeno-anthropological survey team finds themselves stranded in a deeply dangerous predicament. Will they be able to escape? Will the risks they take be worth&nbsp;it?</p>
+                                <em>June 2024</em>
+                                <a href="https://a.co/d/bULMHyd" target="_blank"><img
+                                        src="assets/2024_kolnari_prologue.jpg" class="project-image"></a>
+                                <p class="project-text">The Kolnari Empire has stood for hundreds of years, exploring
+                                    and cultivating the galaxy. A small xeno-anthropological survey team finds
+                                    themselves stranded in a deeply dangerous predicament. Will they be able to escape?
+                                    Will the risks they take be worth&nbsp;it?</p>
                                 <a href="https://a.co/d/bULMHyd" target="_blank" class="project-button">See more</a>
                             </div>
-                            <div>
+                            <div class="books">
                                 <h3>Ochre Sky</h3>
-                                <a href="https://a.co/d/hoq61BV" target="_blank"><img src="assets/2024_ochre_sky.jpg" class="project-image"></a>
-                                <p class="project-text">Ochre Sky is an ultra-realistic near-future adventure following a group of friends and researchers on a Venus science station. Worldbuilding takes center stage before everything turns upside down. What will happen, floating over their beautiful ball of boiling&nbsp;acid?</p>
+                                <em>July 2024</em>
+                                <a href="https://a.co/d/hoq61BV" target="_blank"><img src="assets/2024_ochre_sky.jpg"
+                                        class="project-image"></a>
+                                <p class="project-text">Ochre Sky is an ultra-realistic near-future adventure following
+                                    a group of friends and researchers on a Venus science station. Worldbuilding takes
+                                    center stage before everything turns upside down. What will happen, floating over
+                                    their beautiful ball of boiling&nbsp;acid?</p>
                                 <a href="https://a.co/d/hoq61BV" target="_blank" class="project-button">See more</a>
                             </div>
-                            <div>
-                                <h3>Advisory Board Member</h3>
-                                <img src="assets/fitcob.png" class="project-image" style="background: ghostwhite; padding: 10px;">
-                                <p class="project-text">It is an honor and privilege to join the Florida Institute of Technology Bisk College of Business Advisory&nbsp;Board.</p>
-                                <a href="https://www.fit.edu/business/about/bisk-college-of-business-advisory-board/" target="_blank" class="project-button">See more</a>
+                            <div class="books">
+                                <h3>Bingo Belt Boys</h3>
+                                <em>August 2024</em>
+                                <a href="https://a.co/d/cMwqszz" target="_blank"><img
+                                        src="assets/2024_bingo_belt_boys.jpg" class="project-image"></a>
+                                <p class="project-text">Ananya just needed to break away from her overbearing parents
+                                    and their incessant plan, but now she finds herself a middle manager on a backwater
+                                    asteroid mining facility on the far side of the sun. What happened to the promises
+                                    of frontier gold and fortune? Will she be able to survive the psychological and
+                                    visceral threats coming at&nbsp;her?</p>
+                                <a href="https://a.co/d/cMwqszz" target="_blank" class="project-button">See more</a>
                             </div>
-                            <div>
+
+
+                            <div class="projects">
+                                <h3>VS Code Bulk Create Extension</h3>
+                                <em>July 2024</em>
+                                <img src="assets/2024_vscode_bulkcreate2.png" class="project-image"></a>
+                                        <p class="project-text">
+                                            Efficient little extension for Visual Studio Code allows for bulk creation of files and folders. Designed to be usable for AI copilots and chatbots. Ex: ‘index.html, styles/style.css minstyle.css, main.js’
+                                        </p>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=ZingLab.vscode-bulkcreate" target="_blank" class="project-button-links">Production</a>
+                                <a href="https://github.com/TheRedJalapeno/VSCode_BulkCreate" target="_blank" class="project-button-links">Github</a>
+                            </div>
+                            <div class="projects">
+                                <h3>HotGato Speed Reader</h3>
+                                <em>July 2024</em>
+                                <img src="assets/2024_hotgato.png" class="project-image"></a>
+                                        <p class="project-text">
+                                            JavaScript speed reading webapp, all client side. Can be used offline for secure documents. Supports words per minute, variable word chunk size, punctuation and number pauses, font families, and ‘bionic reading’ mode.
+                                        </p>
+                                <a href="https://hotgato.com" target="_blank" class="project-button-links">Production</a>
+                                <a href="https://github.com/TheRedJalapeno/HotGato_SpeedReader" target="_blank" class="project-button-links">Github</a>
+                            </div>
+                            <div class="projects">
+                                <h3>oBalls Physics Game</h3>
+                                <em>September 2023</em>
+                                <img src="assets/2023_oballs.png" class="project-image"></a>
+                                        <p class="project-text">
+                                            Physics engine game, just playing around with what is possible. My toddler loves it. Managing the audio system was a fun challenge with caching, setting minimum impact velocities, and scaling volume for impacts. 
+                                        </p>
+                                <a href="https://oballs.com/" target="_blank" class="project-button-links">Production</a>
+                                <a href="https://github.com/TheRedJalapeno/OBalls" target="_blank" class="project-button-links">Github</a>
+                            </div>
+                            <div class="projects">
+                                <h3>ADHD Quiz</h3>
+                                <em>July 2024</em>
+                                <img src="assets/2024_adhd_quiz.jpg" class="project-image"></a>
+                                        <p class="project-text">
+                                            An uplifting personality quiz, it draws four semi-random questions from a bank of 24, sorting users into ‘MBTI-style’. The goal is to be positive, represent famous historical figures who might have been neurodivergent, with static results pages for easy sharing and SEO value. Vanilla JS, CSS, HTML.
+                                        </p>
+                                <a href="https://zinglab.com" target="_blank" class="project-button-links">Production</a>
+                                <a href="https://github.com/TheRedJalapeno/ADHD_Quiz" target="_blank" class="project-button-links">Github</a>
+                            </div>
+                            <div class="projects">
+                                <h3>Click2Highlight</h3>
+                                <em>February 2024</em>
+                                <img src="assets/2024_click2highlight.png" class="project-image"></a>
+                                        <p class="project-text">
+                                            Throw the code into Console then double-click to highlight any text blocks on a page. It inserts a span around the selected text. Double-clicking the highlight removes it. Vanilla javascript. 
+                                        </p>
+                                    <a href="https://github.com/TheRedJalapeno/Click2Highlight" target="_blank" class="project-button-links">Github</a>
+                            </div>
+                            <div class="projects">
+                                <h3>NoSpoilers Chrome Extension</h3>
+                                <em>May 2023</em>
+                                <img src="assets/2023_nospoilers.png" class="project-image"></a>
+                                        <p class="project-text">
+                                            Chrome extension for hiding text blocks containing user-specified keywords. TV shows, political candidates, depressing news stories. This extension grays out the text so you can easily avoid the material.
+                                        </p>
+                                <a href="https://chromewebstore.google.com/detail/nospoilers/lfeppohidgccmmihcmnpmohefpgnlfkl" target="_blank" class="project-button-links">Production</a>
+                            </div>
+
+
+                            <div class="resume">
+                                <h3>Advisory Board Member</h3>
+                                <em>June 2024 - current</em>
+                                <img src="assets/fitcob.png" class="project-image"
+                                    style="background: ghostwhite; padding: 10px;">
+                                <p class="project-text">It is an honor and privilege to join the Florida Institute of
+                                    Technology Bisk College of Business Advisory&nbsp;Board.</p>
+                                <a href="https://www.fit.edu/business/about/bisk-college-of-business-advisory-board/"
+                                    target="_blank" class="project-button">See more</a>
+                            </div>
+                            <div class="resume">
                                 <h3>Trustee, Board Member</h3>
+                                <em>June 2024 - current</em>
                                 <img src="assets/sebastian.png" class="project-image" style="background: cadetblue;">
-                                <p class="project-text">It is my distinct privilege to serve the City of Sebastian by joining the Police Retirement Investment Fund alongside, and to the benefit of, the brave men and women keeping our city&nbsp;safe.</p>
+                                <p class="project-text">It is my distinct privilege to serve the City of Sebastian by
+                                    joining the Police Retirement Investment Fund alongside, and to the benefit of, the
+                                    brave men and women keeping our city&nbsp;safe.</p>
                                 <!-- <a href="https://www.amazon.com" target="_blank" class="project-button">See more</a> -->
                             </div>
-                            <div>
+                            <div class="resume">
                                 <h3>Managing Partner</h3>
+                                <em>May 2023 - current</em>
                                 <img src="assets/RDAMBA_Logo_AiryChat.jpg" class="project-image">
-                                <p class="project-text">The age of generative artificial intelligence has arrived. AiryChat exists to support businesses in responsible adoption of these&nbsp;technologies.</p>
+                                <p class="project-text">The age of generative artificial intelligence has arrived.
+                                    AiryChat exists to support businesses in responsible adoption of
+                                    these&nbsp;technologies.</p>
                                 <a href="https://airychat.com" target="_blank" class="project-button">See more</a>
+                            </div>
+                            <div class="resume">
+                                <h3>Director</h3>
+                                <em>March 2022 - May 2023</em>
+                                <img src="assets/RDAMBA_Logo_Discover.jpg" class="project-image">
+                            </div>
+                            <div class="resume">
+                                <h3>Manager</h3>
+                                <em>August 2020 - March 2022</em>
+                                <img src="assets/RDAMBA_Logo_Amazon.jpg" class="project-image">
+                            </div>
+                            <div class="resume">
+                                <h3>Business Owner</h3>
+                                <em>May 2010 - July 2020</em>
+                                <img src="assets/RDAMBA_Logo_Splash.jpg" class="project-image">
                             </div>
                         </div>
                         <hr>
-                        <h6>Timeline (Retired)</h6>
-                        <div id="timeline" class="timeline_sm"></div>
+                        <!-- Start of TIMELINE -->
+                        <!--<div id="timeline" class="timeline_sm"></div>-->
+                        <!-- End of TIMELINE -->
                     </div> <!-- .text_box -->
                 </div> <!-- .column_234_4 -->
-                <!-- End of TIMELINE -->
+                <!-- End of CURRENT ACTIVITIES -->
 
             </div>
         </div>
-    <!-- End of SUMMARY -->
+        <!-- End of SUMMARY -->
     </div>
-<!-- End of BODY -->
-<!-- Start of FOOTER -->
+    <!-- End of BODY -->
+    <!-- Start of FOOTER -->
     <div class="footer">
         <div class="row">
             <span class="footerColumn">
-                <a class="footerLink" target="_blank" href="https://www.linkedin.com/in/robertdallenmba/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a class="footerLink" target="_blank" href="https://www.linkedin.com/in/robertdallenmba/"><i
+                        class="fab fa-linkedin-in"></i> LinkedIn</a>
             </span>
             <span class="footerColumn">
-                <a class="footerLink" target="_blank" href="https://github.com/RobertDAllen"><i class="fab fa-github"></i> Github</a>
+                <a class="footerLink" target="_blank" href="https://github.com/TheRedJalapeno"><i
+                        class="fab fa-github"></i> Github</a>
             </span>
             <span class="footerColumn backToTop">
                 <a class="footerLink" href="#home"><i class="fas fa-arrow-up"></i> Back to Top</a>
@@ -141,8 +315,40 @@
     </div>
 
 
-<!-- End of FOOTER -->
-<script src="timeline.js"></script>
+    <!-- End of FOOTER -->
+    <script src="timeline.js"></script>
+
+    <script>
+        function toggleVisibility(showClass, hideClasses) {
+            // Show the selected element
+            let showElements = document.getElementsByClassName(showClass);
+            for (let i = 0; i < showElements.length; i++) {
+                showElements[i].classList.add('visible');
+                showElements[i].classList.remove('hidden');
+            }
+
+            // Hide the other elements
+            hideClasses.forEach(hideClass => {
+                let hideElements = document.getElementsByClassName(hideClass);
+                for (let i = 0; i < hideElements.length; i++) {
+                    hideElements[i].classList.remove('visible');
+                    hideElements[i].classList.add('hidden');
+                }
+            });
+        }
+        function showAll() {
+            let allClasses = ['projects', 'books', 'resume'];
+            allClasses.forEach(className => {
+                let elements = document.getElementsByClassName(className);
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].classList.add('visible');
+                    elements[i].classList.remove('hidden');
+                }
+            });
+        }
+    </script>
+
 
 </body>
+
 </html>

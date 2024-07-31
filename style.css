@@ -22,10 +22,20 @@ p {font-size: 16px; line-height: 20px; display: block;}
 strong {font-weight: 700;}
 a {font-weight: 700; color: lightskyblue; }
 hr {margin: 20px 0;}
+em {display: block;font-size: small;line-height: 1em;margin-bottom: .8em;}
 
 .hidden {
-    display: none !important;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-out, max-height 0.5s ease-out;
 }
+.visible {
+    opacity: 1;
+    max-height: 1000px; 
+    transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
+}
+
 
 body {
     margin: auto;
@@ -94,6 +104,36 @@ button.visible {
 
 div.nightmodebutton {
     display:none;
+}
+
+.subnav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.subnav-btn {
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 1.5em;
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin: auto;
+    border-style: outset;
+    border-color: #f1f1f1;
+    color: darkslategray;
+}
+
+.subnav-btn-link {
+    display: inline-flex;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 1em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    min-width: 10em;
 }
 
 /* Start of Mobile Styles */ 
@@ -207,7 +247,7 @@ div.nightmodebutton {
     }
     .project-container > div {
         background-color: #f1f1f1;
-        width: auto;
+        width: 100%;
         padding: 15px;
         margin: 10px;
         text-align: left;
@@ -216,17 +256,24 @@ div.nightmodebutton {
         border-radius: 8px;
     }
     .project-image {
-        max-width: 150px;
+        max-width: 4em;
         border-radius: 8px;
-        margin-right: 20px;
+        margin-right: 1em;
         float: left;
     }
     .project-text {
         display: inline;
     }
     .project-button {
-        display: block;
-        margin: 15px 0;
+        display: flex;
+        padding: 1em 0 0;
+        width: 100%;
+        font-size: .8em;
+    }
+    .project-button-links {
+        display: list-item;
+        font-size: .8em;
+        margin: .5em 1em;
     }
 
     /* Start of Portfolio Display - General */
