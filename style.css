@@ -14,8 +14,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {font-family: 'Raleway', sans-serif; margin: 
 
 h1 {font-size: 30px; line-height: 35px; color: #fcd21d;}
 h2 {font-size: 16px; line-height: 35px; }
-h3 {font-size: 22px; line-height: 25px; font-style: italic; font-weight: 300;}
-h4 {font-size: 22px; line-height: 25px; font-weight: 700; color: #ffffff;}
+h3 {font-size: 1.1em; line-height: 25px; font-style: italic; font-weight: 300;}
+h4 {font-size: .7em; line-height: 1em; font-weight: 700;}
 h5 {font-size: 25px; line-height: 18px; font-style: italic;}
 h6 {font-size: 18px; line-height: 22px; text-transform: uppercase; color: #fcd21d;font-weight: 700; margin-top: 20px;}
 p {font-size: 16px; line-height: 20px; display: block;}
@@ -29,6 +29,7 @@ em {display: block;font-size: small;line-height: 1em;margin-bottom: .8em;}
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.5s ease-out, max-height 0.5s ease-out;
+    display: none;
 }
 .visible {
     opacity: 1;
@@ -36,6 +37,9 @@ em {display: block;font-size: small;line-height: 1em;margin-bottom: .8em;}
     transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
 }
 
+img {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+}
 
 body {
     margin: auto;
@@ -106,6 +110,12 @@ div.nightmodebutton {
     display:none;
 }
 
+span.button {
+    font-size: 1.1em;
+    font-weight: 700;
+    font-style: italic;
+}
+
 .subnav {
     display: flex;
     flex-flow: row wrap;
@@ -120,9 +130,9 @@ div.nightmodebutton {
     background: #f1f1f1;
     border-radius: 8px;
     margin: auto;
-    border-style: outset;
     border-color: #f1f1f1;
     color: darkslategray;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 .subnav-btn-link {
@@ -258,7 +268,7 @@ div.nightmodebutton {
     .project-image {
         max-width: 4em;
         border-radius: 8px;
-        margin-right: 1em;
+        margin: 0 1em 1em 0;
         float: left;
     }
     .project-text {
