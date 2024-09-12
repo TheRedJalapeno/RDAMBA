@@ -8,33 +8,85 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,700&display=swap');
 
-html {scroll-behavior: smooth;}
-
-h1, h2, h3, h4, h5, h6, p, span, a {font-family: 'Raleway', sans-serif; margin: 8px 0px;}
-
-h1 {font-size: 30px; line-height: 35px; color: #fcd21d;}
-h2 {font-size: 16px; line-height: 35px; }
-h3 {font-size: 1.1em; line-height: 25px; font-style: italic; font-weight: 300;}
-h4 {font-size: .7em; line-height: 1em; font-weight: 700;}
-h5 {font-size: 25px; line-height: 18px; font-style: italic;}
-h6 {font-size: 18px; line-height: 22px; text-transform: uppercase; color: #fcd21d;font-weight: 700; margin-top: 20px;}
-p {font-size: 16px; line-height: 20px; display: block;}
-strong {font-weight: 700;}
-a {font-weight: 700; color: lightskyblue; }
-hr {margin: 20px 0;}
-em {display: block;font-size: small;line-height: 1em;margin-bottom: .8em;}
-
-.hidden {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease-out, max-height 0.5s ease-out;
-    display: none;
+html {
+    scroll-behavior: smooth;
 }
-.visible {
-    opacity: 1;
-    max-height: 1000px; 
-    transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    font-family: 'Raleway', sans-serif;
+    margin: .5em 0em;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 35px;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+h3 {
+    font-size: 1.1em;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: .7em;
+    line-height: 1em;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 25px;
+    line-height: 18px;
+    font-style: italic;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: darkorange;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    font-weight: 700;
+    color: orangered;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+em {
+    display: block;
+    font-size: small;
+    line-height: 1em;
+    margin-bottom: .8em;
 }
 
 img {
@@ -47,15 +99,23 @@ body {
     position: absolute;
     width: 100%;
 }
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+/* Night Mode Day Mode */
+
 body.nightMode {
     background-color: #333333;
     color: #f2f2f2;
 }
+
 body.dayMode {
     background-color: #ffffff;
     color: #666666;
 }
-.row:after, .inner_text:after {
+
+.row:after,
+.inner_text:after {
     display: block;
     visibility: hidden;
     clear: both;
@@ -64,18 +124,21 @@ body.dayMode {
     line-height: 0;
     content: ".";
 }
+
 div.column {
     width: 100%;
     display: inline-block;
     margin: auto;
 }
-button#night, button#day {
+
+button#night,
+button#day {
     color: #333333;
     border: none;
     background-color: #ffffff;
     padding: 10px 15px;
     border-radius: 8px;
-    box-shadow: 2px 3px 4px rgba(0,0,0,0.4);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     font-size: 18px;
     font-weight: 300;
@@ -84,14 +147,17 @@ button#night, button#day {
     left: 0px;
     top: 0px;
 }
+
 button#night {
     color: #f2f2f2;
     background-color: #333333;
 }
+
 button#day {
     color: #333333;
     background-color: #f2f2f2;
 }
+
 button.hidden {
     visibility: hidden;
     width: 0;
@@ -99,6 +165,7 @@ button.hidden {
     height: 0;
     float: right;
 }
+
 button.visible {
     visibility: visible;
     width: auto;
@@ -107,17 +174,16 @@ button.visible {
 }
 
 div.nightmodebutton {
-    display:none;
+    display: none;
 }
 
 span.button {
     font-size: 1.1em;
     font-weight: 700;
-    font-style: italic;
 }
 
 .subnav {
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     justify-content: center;
 }
@@ -146,303 +212,399 @@ span.button {
     min-width: 10em;
 }
 
-/* Start of Mobile Styles */ 
+/* END of Night Mode Day Mode */
 
-    /* Start of HEADER  */
-    nav.header {
-        z-index: 10;
-        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.3);
-        display: block;
-        width: 100%;
-        padding: 10px 0 0 0;
-        margin-bottom: 20px;
-        background-color: inherit;
-        position: fixed;
-    }
-    nav.header > div.row {
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-    nav.header > div.row > div  {
-        width: 100%;
-        text-align: center;
-        align-self: center;
-    }
-    h1.rpheadline {
-        margin-top: 4px;
-    }
-    div.rowIcons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0 5px;
-        max-width: 200px;
-        margin: auto;
-    }
-    div.rowIcons > a {
-        text-decoration: none;
-        margin: 0;
-    }
-    div.navRight > a {
-        line-height: 2em;
-    }
-    /* End of HEADER */
 
-    /* Start of SUMMARY */
-    div.image_module {
-        width: 100%;
-        display: block;
-    }
-    img.profile_image {
-        border-radius: 50%;
-        width: 30%;
-        max-width: 250px;
-        height: auto;
-        float: right;
-        margin-top: 20px;
-        min-width: 100px;
-    }
-    div.key_points > p {
-        margin-bottom: 13px;
-        font-size: 14px;
-    }
-    div.column_key {
-        width: 100%;
-        text-align: left;
-        float: left;
-        margin-right:auto;
-        display: block;
-    }
-    div.column_info {
-        width: 100%;
-        text-align: left;
-        display: block;
-        float: left;
-    }
-    /* End of SUMMARY */
+/* ----- ----- ----- */
+/* ----- ----- ----- */
 
-    /* Start of BODY */
-    body div.body {
-        width: auto;
-        margin: 160px 10% 0 10%;
-        display: block;
-    }
-    p.rpsectionhead {
-        color: #fcd21d;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 1em;
-        padding-bottom: 0;
-        margin-top: 40px;
-    }
-    div.rowportfolio {
-        padding: 27px 0 0 0;
-    }
-    h2.jobtitle {
-        margin: 0;
-        line-height: 1em;
-        font-size: 1.3em;
-    }
-    span.dateRange {
-        font-style: italic;
-        font-size: .9em;
-    }
-    /* Start of Project Flexbox */
-    .project-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    .project-container > div {
-        border: 1px solid rgb(150 150 150 / 50%);
-        width: 100%;
-        padding: 15px;
-        margin: 10px;
-        text-align: left;
-        line-height: 1.3em;
-        font-size: 1.2em;
-        border-radius: 8px;
-    }
-    .project-image {
-        max-width: 4em;
-        border-radius: 8px;
-        margin: 0 1em 1em 0;
-        float: left;
-    }
-    .project-text {
-        display: inline;
-    }
-    .project-button {
-        display: flex;
-        padding: 1em 0 0;
-        width: 100%;
-        font-size: .8em;
-    }
-    .project-button-links {
-        display: list-item;
-        font-size: .8em;
-        margin: .5em 1em;
-    }
 
-    /* Start of Portfolio Display - General */
-        div.divider {
-            width: 100%; 
-            height: 5px; 
-            background-color: rgba(0,0,0,0.7); 
-            margin-top: 25px;
-        }
-        div.section_title {
-            background-color: #333;
-            border-radius: 0 0 100% 0;
-            max-width: 450px;
-            height: auto;
-        }
-        div.sectionTitle > div.textInner > h3.companyName {
-            font-size: 2em;
-        }
-        div.sectionTitle > div.textInner > h5 {
-            font-size: 14px; 
-            margin-bottom: -5px;
-            font-weight: 600;
-        }
-        .examples_1, .examples_2, .examples_4 {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 100%;
-            padding-bottom: 25px;
-        }
-        div.column_1_2, div.column_2_2, 
-        div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
-            width: 47%;
-            text-align: center;
-            align-self: flex-start;
-        }
-        p.img_title {
-            font-weight: 700;
-            margin-top: 22px;
-        }
-        div.image > a >span.image_wrap > img {
-            width: 100%;
-        }
-        div.stats {
-            margin-top: 20px;
-        }
-        div.stats > hr {
-            margin: 20px 10px;
-        }
-        div.sectionEmployer {
-            height: 5px;
-            position: relative;
-            top: -125px;
-        }
-        /* End of Portfolio Display */
-    /* End of BODY */
+/* Start of Mobile Styles */
 
-    /* Start of FOOTER */
-    div.footer {
-        min-height: 100px;
-        margin-top: 40px;
-        background-color: rgba(0,0,0,0.7);
-        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.3);
-    }
-    div.footer > div.row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 25px;
-    }
-    div.footer > div.row > span {
-        width: 100%;
-        text-align: center;
-        flex-grow: 2;
-    }
-    div.footer > div.row > span > a {
-        color: #ffffff;
-        font-weight: 400;
-        font-size: 24px;
-        text-decoration: none;
-        display: inline-block;
-    }
-    div.footer > div.row > span > a.activeLink {
-        color: #fcd21d;
-        text-decoration: underline;
-        cursor: not-allowed;
-    }
-    /* End of FOOTER */
+/* Start of HEADER  */
+nav.header {
+    z-index: 10;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+    display: block;
+    width: 100%;
+    padding: 10px 0 0 0;
+    margin-bottom: 20px;
+    background-color: inherit;
+    position: fixed;
+    background-color: darkorange;
+}
 
-    /* Start of Timeline */
-    .timeline_sm {
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        height: 80vh;
-        position: relative;
-        margin: 0 -4%;
-    }
-    .timeline_sm::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 4px;
-        background: #333;
-    }
-    div.job {
-        position: relative;
-        width: 50%;
-        border-radius: 1em;
-        min-height: 100px;
-    }
-    .job:nth-child(even) {
-        align-self: flex-end;
-    }
-    .job:nth-child(even)::after {
-        left: unset;
-        right: -10px;
-        border-width: 10px 0 0 10px;
-    }
-    span.job-wrapper {
-            display: inline-block;
-            font-size: 14px;
-            margin: 5px 15px;
-    }
-    .job-title {
-        font-size: 1.2em;
-        font-weight: bold;
-        display: block;
-        margin-bottom: 0;
-    }
-    .job-start, .job-end {
-        display: inline-block;
-        margin-top: 0;
-    }
-    .jobz, .jobb, .jobd, .jobf {
-        color: black;
-    }
-    .jobairy, .joba, .jobc, .jobe, .jobg {
-        color: white;
-    }
-    .jobb > span > img.job-logo,
-    .jobz > span > img.job-logo {
-        display: none;
-    }
-    .job-title {
-        font-size: 15px;
-        margin: 0;
-    }
-    img.job-logo {
-        display: none;
-    }
-    span.job-start, span.job-end {
-        margin: 0 0 0 0;
-    }
-    /* End of Timeline */
+nav.header a {
+    color: aliceblue;
+}
+
+nav.header>div.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+nav.header>div.row>div {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+h1.rpheadline {
+    margin-top: 4px;
+}
+
+div.rowIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    max-width: 200px;
+    margin: auto;
+}
+
+div.rowIcons>a {
+    text-decoration: none;
+    margin: 0;
+}
+
+div.navRight>a {
+    line-height: 2em;
+}
+
+/* End of HEADER */
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+
+/* Start of SUMMARY */
+div.image_module {
+    width: 100%;
+    display: block;
+}
+
+img.profile_image {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+}
+
+div.key_points>p {
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+
+div.column_key {
+    width: 100%;
+    text-align: left;
+    float: left;
+    margin-right: auto;
+    display: block;
+}
+
+div.column_info {
+    width: 100%;
+    text-align: left;
+    display: block;
+    float: left;
+}
+
+/* End of SUMMARY */
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+
+/* Start of BODY */
+body div.body {
+    width: auto;
+    margin: 160px 10% 0 10%;
+    display: block;
+}
+
+p.rpsectionhead {
+    color: #fcd21d;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+    padding-bottom: 0;
+    margin-top: 40px;
+}
+
+div.rowportfolio {
+    padding: 27px 0 0 0;
+}
+
+h2.jobtitle {
+    margin: 0;
+    line-height: 1em;
+    font-size: 1.3em;
+}
+
+span.dateRange {
+    font-style: italic;
+    font-size: .9em;
+}
+
+/* ----- ----- ----- */
+
+/* Start of Project Flexbox */
+.project-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-container>div {
+    border: 1px solid rgb(150 150 150 / 50%);
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+.project-image {
+    max-width: 4em;
+    border-radius: 8px;
+    margin: 0 1em 1em 0;
+    float: left;
+}
+
+.project-text {
+    display: inline;
+}
+
+.project-button {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    font-size: .8em;
+}
+
+.project-button-links {
+    display: inline;
+    font-size: .8em;
+    margin: .5em 1em;
+}
+
+div span {
+    display: inline-block;
+    margin: 0;
+}
+
+/* ----- ----- ----- */
+
+/* Start of Portfolio Display - General */
+div.divider {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 25px;
+}
+
+div.section_title {
+    background-color: #333;
+    border-radius: 0 0 100% 0;
+    max-width: 450px;
+    height: auto;
+}
+
+div.sectionTitle>div.textInner>h3.companyName {
+    font-size: 2em;
+}
+
+div.sectionTitle>div.textInner>h5 {
+    font-size: 14px;
+    margin-bottom: -5px;
+    font-weight: 600;
+}
+
+.examples_1,
+.examples_2,
+.examples_4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+div.column_1_2,
+div.column_2_2,
+div.column_1_4,
+div.column_2_4,
+div.column_3_4,
+div.column_4_4 {
+    width: 47%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+p.img_title {
+    font-weight: 700;
+    margin-top: 22px;
+}
+
+div.image>a>span.image_wrap>img {
+    width: 100%;
+}
+
+div.stats {
+    margin-top: 20px;
+}
+
+div.stats>hr {
+    margin: 20px 10px;
+}
+
+div.sectionEmployer {
+    height: 5px;
+    position: relative;
+    top: -125px;
+}
+
+/* End of Portfolio Display */
+/* End of BODY */
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+
+/* Start of FOOTER */
+div.footer {
+    min-height: 100px;
+    margin-top: 40px;
+    background-color: darkorange;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+div.footer>div.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+div.footer>div.row>span {
+    width: 100%;
+    text-align: center;
+    flex-grow: 2;
+}
+
+div.footer>div.row>span>a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+div.footer>div.row>span>a.activeLink {
+    color: #fcd21d;
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+/* End of FOOTER */
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+
+/* Start of Timeline */
+.timeline_sm {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    margin: 0 -4%;
+}
+
+.timeline_sm::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #333;
+}
+
+div.job {
+    position: relative;
+    width: 50%;
+    border-radius: 1em;
+    min-height: 100px;
+}
+
+.job:nth-child(even) {
+    align-self: flex-end;
+}
+
+.job:nth-child(even)::after {
+    left: unset;
+    right: -10px;
+    border-width: 10px 0 0 10px;
+}
+
+span.job-wrapper {
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 15px;
+}
+
+.job-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0;
+}
+
+.job-start,
+.job-end {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.jobz,
+.jobb,
+.jobd,
+.jobf {
+    color: black;
+}
+
+.jobairy,
+.joba,
+.jobc,
+.jobe,
+.jobg {
+    color: white;
+}
+
+.jobb>span>img.job-logo,
+.jobz>span>img.job-logo {
+    display: none;
+}
+
+.job-title {
+    font-size: 15px;
+    margin: 0;
+}
+
+img.job-logo {
+    display: none;
+}
+
+span.job-start,
+span.job-end {
+    margin: 0 0 0 0;
+}
+
+/* End of Timeline */
 
 /* End of Mobile Styles */
 
@@ -461,33 +623,47 @@ span.button {
     nav.header {
         padding: 10px 0 5px 0;
     }
-    nav.header > div.row {
+
+    nav.header>div.row {
         max-width: 1200px;
         width: 80%;
         margin: auto;
         justify-content: space-between;
     }
-    nav.header > div.row > div {
+
+    nav.header>div.row>div {
         width: auto;
         width: 50%;
     }
-    nav.header > div.row > div.navLeft {
+
+    nav.header>div.row>div.navLeft {
         text-align: left;
         align-self: center;
     }
+
     div.rowIcons {
         margin: inherit;
     }
-    div.rowIcons > a {
+
+    div.rowIcons>a {
         margin: 0 0 8px 0;
     }
-    nav.header > div.row > div.navRight {
+
+    nav.header>div.row>div.navRight {
         text-align: right;
         align-self: center;
     }
-    div.navRight > a {
+
+    div.navRight>a {
         line-height: 2em;
     }
+
+    .subnav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
     /* End of HEADER */
     /* Start of BODY */
     body div.body {
@@ -497,15 +673,18 @@ span.button {
         margin-top: 110px;
         display: block;
     }
+
     div.nightmodebutton {
-        display:block;
+        display: block;
     }
+
     /* End of BODY */
 
     /* Start of SUMMARY */
     div.image_module {
         display: inline-block;
     }
+
     img.profile_image {
         width: 95%;
         float: left;
@@ -514,89 +693,112 @@ span.button {
         display: block;
         min-width: 100px;
     }
+
     div.column_key {
         width: 26%;
     }
+
     div.column_info {
         width: 65%;
         float: right;
     }
+
     /* End of SUMMARY */
 
     /* Start of BODY */
-        /* Start of Portfolio Display - General */
-        h4.company_name {
-            max-width: 100%;
-            padding-bottom: 20px;
-        }
-        div.section_title {
-            max-width: 450px;
-            height: 75px;
-        }
-        p.img_title {
-            margin-top: 12px;
-        }
-        div.stats {
-            margin-top: 50px;
-        }
-        div.stats > hr {
-            margin: 20px 35px;
-        }
-        div.column_1_4, div.column_2_4, div.column_3_4, div.column_4_4 {
-            width: 21%;
-        }
-        div#campusadvantage {
-            margin-bottom: 45px;
-        }
-        /* End of Portfolio Display*/
+    /* Start of Portfolio Display - General */
+    h4.company_name {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+
+    div.section_title {
+        max-width: 450px;
+        height: 75px;
+    }
+
+    p.img_title {
+        margin-top: 12px;
+    }
+
+    div.stats {
+        margin-top: 50px;
+    }
+
+    div.stats>hr {
+        margin: 20px 35px;
+    }
+
+    div.column_1_4,
+    div.column_2_4,
+    div.column_3_4,
+    div.column_4_4 {
+        width: 21%;
+    }
+
+    div#campusadvantage {
+        margin-bottom: 45px;
+    }
+
+    /* End of Portfolio Display*/
     /* End of BODY */
-    
+
     /* Start of FOOTER */
-    div.footer > div.row > span {
+    div.footer>div.row>span {
         width: 19%;
         text-align: center;
     }
+
     /* End of FOOTER */
 
 
-      /* Start of Timeline */
-        div.timeline_sm{
-            max-width: 700px;
-            margin: 0;
-        }
-        div.job {
-            max-width:350px;
-            min-height: 85px;
-        }
-        .job-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 0;
-        }
-        .job-start, .job-end {
-            display: inline-block;
-            margin-top: 0;
-        }
-        span > img.job-logo {
-            display: block;
-            width: 50px;
-            border-radius: 8px;
-        }
-        .jobb > span > img.job-logo,
-        .jobz > span > img.job-logo {
-            display: none;
-        }
-        span.logo-wrapper{
-            display: inline-block;
-            margin-right: 10px;
-        }
-        span.details-wrapper {
-            display: inline-block;
-            position: absolute;
-        }
-
-        /* End of Timeline */
-
+    /* Start of Timeline */
+    div.timeline_sm {
+        max-width: 700px;
+        margin: 0;
     }
+
+    div.job {
+        max-width: 350px;
+        min-height: 85px;
+    }
+
+    .job-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .job-start,
+    .job-end {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    span>img.job-logo {
+        display: block;
+        width: 50px;
+        border-radius: 8px;
+    }
+
+    .jobb>span>img.job-logo,
+    .jobz>span>img.job-logo {
+        display: none;
+    }
+
+    span.logo-wrapper {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    span.details-wrapper {
+        display: inline-block;
+        position: absolute;
+    }
+
+    /* End of Timeline */
+
+}
+
 /* End of DESKTOP MEDIA QUERY */
