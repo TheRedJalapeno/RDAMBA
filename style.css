@@ -347,7 +347,7 @@ div.image_module {
 
 img.profile_image {
     border-radius: 50%;
-    width: 50%;
+    width: 150px;
     height: auto;
     transition: box-shadow 0.5s, background 0.5s;
 }
@@ -756,7 +756,7 @@ span.job-end {
     }
 
     img.profile_image {
-        width: 95%;
+        width: 250px;
         float: left;
         margin-bottom: 20px;
         margin-top: 15px;
