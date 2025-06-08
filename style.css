@@ -1,15 +1,34 @@
 /*
  Stylesheet:     Robert D Allen MBA
- URL:            http://RobertDAllen.com/
+ URL:            http://RDAMBA.com/
  Author:         Robert Allen
  Version:        2019.09.13
 */
 
+:root {
+    --primary-color: darkorange;
+    --secondary-color: #333333;
+    --accent-color: orangered;
+    --background-light: #ffffff;
+    --background-dark: #444444;
+    --text-light: aliceblue;
+    --text-dark: #444444;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,700&display=swap');
 
+
+
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    color: #666666;
+    position: absolute;
+    width: 100%;
 }
 
 h1,
@@ -26,9 +45,10 @@ a {
 }
 
 h1 {
-    font-size: 2em;
-    line-height: 35px;
-    color: aliceblue;
+    font-size: 1.3em;
+    line-height: 1;
+    color: var(--text-dark);
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -91,14 +111,24 @@ em {
 }
 
 img {
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1);
 }
 
-body {
-    margin: auto;
-    color: #666666;
-    position: absolute;
-    width: 100%;
+ul {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: "+  ";
+}
+
+ul.narrow-list {
+    padding-left: 15px;
+}
+.font-smaller {
+    font-size: 0.8em;
 }
 
 /* ----- ----- ----- */
@@ -219,8 +249,22 @@ span.button {
 /* ----- ----- ----- */
 /* ----- ----- ----- */
 
+/* Start of Global Styles */
 
-/* Start of Mobile Styles */
+
+
+
+span.resume-body {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+span.resume-body p {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
 
 /* Start of HEADER  */
 nav.header {
@@ -252,6 +296,8 @@ nav.header>div.row>div {
 }
 
 h1.rpheadline {
+    font-size: 2em;
+    color: var(--text-light);
     margin-top: 4px;
 }
 
@@ -289,7 +335,14 @@ img.profile_image {
     border-radius: 50%;
     width: 50%;
     height: auto;
+    transition: box-shadow 0.5s, background 0.5s;
 }
+
+img.profile_image:hover {
+    box-shadow: 0 0 24px 8px var(--primary-color), 0 0 40px 12px var(--accent-color);
+    background: rgba(255, 140, 0, 0.15);
+}
+
 
 div.key_points>p {
     margin-bottom: 13px;
@@ -368,14 +421,17 @@ span.dateRange {
 }
 
 .project-image {
-    max-width: 4em;
+    width: 85px;
+    height: 85px;
     border-radius: 8px;
     margin: 0 1em 1em 0;
     float: left;
+    object-fit: contain;
 }
 
 .project-text {
     display: inline;
+    font-size: 14px;
 }
 
 .project-button {
@@ -392,7 +448,6 @@ span.dateRange {
 }
 
 div span {
-    display: inline-block;
     margin: 0;
 }
 
@@ -604,6 +659,7 @@ span.job-start,
 span.job-end {
     margin: 0 0 0 0;
 }
+
 
 /* End of Timeline */
 
