@@ -251,7 +251,21 @@ span.button {
 
 /* Start of Global Styles */
 
+img.navIcon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+    box-shadow: none;
+}
 
+img.footerIcon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+    margin-right: 6px;
+    box-shadow: none;
+}
 
 
 span.resume-body {
