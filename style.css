@@ -2,7 +2,6 @@
  Stylesheet:     Robert D Allen MBA
  URL:            http://RDAMBA.com/
  Author:         Robert Allen
- Version:        2019.09.13
 */
 
 :root {
@@ -255,6 +254,7 @@ span.resume-body p {
     display: inline-block;
     font-size: 14px;
     line-height: 1.2em;
+    margin-bottom: 2px;
 }
 
 span.job-header {
@@ -362,11 +362,18 @@ div.body {
   border: 1px solid #aaa;
   padding: 10px;
   border-radius: 8px;
-  background: #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  color: black;
+  background: #f0f0f0;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  color: var(--text-dark);
   font-weight: 700;
   text-decoration: none;
+    display: inline-block;
+  transition-duration: .3s;
+}
+
+.section-btn:hover {
+  background: #e0e0e0;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- ----- ----- */
