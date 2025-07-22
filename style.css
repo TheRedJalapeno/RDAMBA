@@ -1,6 +1,6 @@
 /*
  Stylesheet:     Robert D Allen MBA
- URL:            http://RDAMBA.com/
+ URL:            https://RobertDAllen.com/
  Author:         Robert Allen
 */
 
@@ -12,6 +12,12 @@
     --background-dark: #444444;
     --text-light: aliceblue;
     --text-dark: #444444;
+    --shadow-default: 1px 1px 4px rgba(0,0,0,.1);
+    --shadow-bigger: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    --border-color: 1px solid rgba(150, 150, 150, 0.2);
+    --border-radius: 2px;
+    --border-radius-8px: 2px;
+    --btn-hover-bg: orangered;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,700&display=swap');
@@ -114,7 +120,7 @@ em {
 }
 
 img {
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-default);
 }
 
 ul {
@@ -159,8 +165,8 @@ button#day {
     border: none;
     background-color: #ffffff;
     padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-default);
     cursor: pointer;
     font-size: 18px;
     font-weight: 300;
@@ -265,7 +271,7 @@ span.job-header {
 /* Start of HEADER  */
 nav.header {
     z-index: 10;
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-default);
     display: block;
     width: 100%;
     padding: 10px 0 0 0;
@@ -359,11 +365,11 @@ div.body {
 
 .section-btn {
   margin: 10px;
-  border: 1px solid #aaa;
+  border: var(--border-color);
   padding: 10px;
-  border-radius: 8px;
-  background: #f0f0f0;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  background: var(--background-light);
+  box-shadow: var(--shadow-default);
   color: var(--text-dark);
   font-weight: 700;
   text-decoration: none;
@@ -372,8 +378,9 @@ div.body {
 }
 
 .section-btn:hover {
-  background: #e0e0e0;
-  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  background: var(--btn-hover-bg);
+  color: var(--text-light);
+  box-shadow: var(--shadow-bigger);
 }
 
 /* ----- ----- ----- */
@@ -386,20 +393,21 @@ div.body {
 }
 
 .project-container>div {
-    border: 1px solid rgb(150 150 150 / 50%);
+    border: var(--border-color);
     width: 100%;
     padding: 15px;
     margin: 10px auto;
     text-align: left;
     line-height: 1.3em;
     font-size: 1.2em;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-default);
 }
 
 .project-image {
     width: 85px;
     height: 85px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-8px);
     margin: 0 1em 1em 0;
     float: left;
     object-fit: contain;
@@ -433,7 +441,7 @@ div.footer {
     min-height: 100px;
     margin-top: 40px;
     background-color: darkorange;
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-default);
 }
 
 div.footer>div.row {
