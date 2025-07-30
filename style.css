@@ -93,7 +93,7 @@ h6 {
 p {
     font-size: 16px;
     line-height: 20px;
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -338,7 +338,7 @@ div.key_points>p {
 
 div.column_key {
     width: 100%;
-    text-align: left;
+    text-align: center;
     float: left;
     margin-right: auto;
     display: block;
@@ -524,6 +524,10 @@ div.footer>div.row>span>a {
         width: 80%;
         margin: auto;
         display: block;
+    }
+
+    div.column_key {
+    text-align: left;
     }
 
     div.nightmodebutton {
